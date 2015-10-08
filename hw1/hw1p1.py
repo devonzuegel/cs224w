@@ -31,10 +31,16 @@ def partC():
 
 
 #### PART D ##########################################################################
-# 1. Graph has n nodes
-# 2. For each pair of possible nodes (a,b) (b, c), (d, e) etc, for example, we do a
-#    coin toss with probability p.
-# 3. If the coin toss is 1, we connect those two edges, if not, we don't.
+# Generate (without using existing one-line library methods) a Erdos-Renyi random
+# graph with N = 2000 nodes, with probability p = 0.1 of an edge existing between any
+# two nodes, and plot the resulting normalized degree distribution. What type of
+# distribution is the degree distribution? Briefly explain why the distribution differs
+# from the graphs generated in part (a).
+#
+#  1. Graph has n nodes
+#  2. For each pair of possible nodes (a,b) (b, c), (d, e) etc, for example, we do a
+#     coin toss with probability p.
+#  3. If the coin toss is 1, we connect those two edges, if not, we don't.
 
 def partD():
   raise Exception
