@@ -1,4 +1,4 @@
-import snap, operator
+import snap, operator, numpy
 
 def build_legends(filename, valuefn, delim=None):
   legend     = snap.TIntStrH()
@@ -33,3 +33,12 @@ def max_wcc_info(edges_file, key_file, valuefn):
   legend, full_lines = build_legends(key_file, valuefn, '\t')
 
   return MaxWCC, legend, full_lines
+
+
+def build_adjacency_matrix(G):
+  A = [[0 for n in G.Nodes()] for m in G.Nodes()]
+  for e in G.Edges():
+    i, j = e.GetDstNId(), e.GetSrcNId()
+    A[i - 1][j - 1] = 1
+    A[j - 1][i - 1] = 1
+  return numpy.matrix(A)

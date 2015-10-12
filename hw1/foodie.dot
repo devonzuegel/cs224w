@@ -1,0 +1,29 @@
+/*****
+Chef graph
+*****/
+
+graph G {
+  graph [splines=false overlap=false]
+  node  [shape=ellipse, width=0.3, height=0.3]
+  1 ;
+  2 ;
+  3 ;
+  4 ;
+  7 ;
+  8 ;
+  6 ;
+  5 ;
+  1 -- 2;
+  1 -- 3;
+  1 -- 4;
+  2 -- 7;
+  2 -- 8;
+  3 -- 4;
+  3 -- 6;
+  4 -- 6;
+  7 -- 8;
+  5 -- 6;
+  5 -- 7;
+  5 -- 8;
+  label = "\nChef graph\n";  fontsize=24;
+}
