@@ -16,7 +16,7 @@ for i in range(0,6):
     *n_nodes_per_degree(graph),
     c          = COLORS[i],
     label      = LABELS[i],
-    alpha      = 0.5,
+    alpha      = 0.6,
     edgecolors = 'none',
     norm       = True
   )

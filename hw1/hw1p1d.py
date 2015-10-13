@@ -16,7 +16,7 @@ pyplot.scatter(
     *n_nodes_per_degree(graph),
     c          = color,
     label      = label,
-    alpha      = 0.5,
+    alpha      = 0.6,
     edgecolors = 'none',
     norm       = True
 )

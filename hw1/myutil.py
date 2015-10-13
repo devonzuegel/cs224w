@@ -3,8 +3,8 @@ import random
 from matplotlib import pyplot
 
 TOTAL_N_NODES = 2000
-COLORS = ['red', 'blue', 'green', 'purple', 'orange', 'black']
-LABELS = ['0.0', '0.2',  '0.4',   '0.6',    '0.8',    '1.0']
+COLORS = ['red',  'blue',  'green',  'purple',  'orange',  'black']
+LABELS = ['0.0',  '0.2',   '0.4',    '0.6',     '0.8',     '1.0']
 
 def set_up_graph():
   graph = snap.TUNGraph.New()
