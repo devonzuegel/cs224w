@@ -12,6 +12,13 @@ for i in range(0,6):
     if random_prob < prob:  graph.AddEdge(node_i, random_node_i)
     else:                   graph.AddEdge(node_i, rand_nbr_node(graph, random_node_i))
 
-  pyplot.scatter(*n_nodes_per_degree(graph), c=COLORS[i], label=LABELS[i], alpha=0.5, edgecolors='none', norm=True)
+  pyplot.scatter(
+    *n_nodes_per_degree(graph),
+    c          = COLORS[i],
+    label      = LABELS[i],
+    alpha      = 0.5,
+    edgecolors = 'none',
+    norm       = True
+  )
 
 pyplot_options()

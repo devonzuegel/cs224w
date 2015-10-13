@@ -12,6 +12,8 @@ Code in `hw1p1a.py` + `myutil.py`.
 
 ### Part C ###
 
+> TODO
+
 Code in `hw1p1c.py` + `myutil.py`.
 
 ### Part D ###
@@ -131,19 +133,32 @@ RANK  NAME                    BETWEENNESS      NUM FILMS
 
 ### Part E ###
 
+```py
+def rank(mylist):
+    indices = list(range(len(mylist)))
+    indices.sort(key=lambda x: mylist[x], reverse=True)
+    ranked = [0] * len(indices)
+    for new_i, old_i in enumerate(indices):   ranked[old_i] = new_i + 1
+    return ranked
+```
+
+
 Scores after `k = 1` rounds:
 ```
-[ 0.6, 0.55, 0.6, 0.55, 0.6, 0.45, 0.6, 0.45]]
+Q1       = [ 0.6, 0.55, 0.6, 0.55, 0.6, 0.45, 0.6, 0.45]
+rankings = [ 1, 5, 2, 6, 3, 7, 4, 8 ]
 ```
 
 ... after `k = 2` rounds:
 ```
-[ 1.166, 1.1, 1.133, 1.1, 1.1, 1.033, 1.133, 1.033]
+Q2       = [ 1.166, 1.1, 1.133, 1.1, 1.1, 1.033, 1.133, 1.033]
+rankings = [ 1, 4, 2, 5, 6, 7, 3, 8 ]
 ```
 
 ... after `k = 3` rounds:
 ```
-[ 1.4388, 1.3805, 1.4166, 1.3805, 1.3833, 1.2972, 1.4055, 1.2972]
+Q3       = [ 1.4388, 1.3805, 1.4166, 1.3805, 1.3833, 1.2972, 1.4055, 1.2972]
+rankings = [1, 5, 2, 6, 4, 7, 3, 8]
 ```
 
 ... after `k = ∞` rounds:

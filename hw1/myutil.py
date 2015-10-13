@@ -43,4 +43,3 @@ def pyplot_options():
   pyplot.legend()
   pyplot.ylim([0.0001,1])
   pyplot.show()
-
