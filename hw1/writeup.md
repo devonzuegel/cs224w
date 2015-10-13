@@ -4,7 +4,17 @@ Devon Zuegel &nbsp; // &nbsp; 8 Oct 2015 &nbsp; // &nbsp; CS 224W
 
 ## Problem 1 :: Network characteristics (30 points) ##
 
-(TODO: Waiting on John)
+### Part A ###
+
+Code in `hw1p1a.py` + `myutil.py`.
+
+### Part B ###
+
+### Part C ###
+
+Code in `hw1p1c.py` + `myutil.py`.
+
+### Part D ###
 
 ## Problem 2 :: Who is the most central actor? (30 points) ##
 
