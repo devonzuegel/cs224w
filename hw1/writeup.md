@@ -4,11 +4,11 @@ Devon Zuegel &nbsp; // &nbsp; 8 Oct 2015 &nbsp; // &nbsp; CS 224W
 
 ## Problem 1 :: Network characteristics (30 points) ##
 
-### Part A ###
+### Problem 1, Part A ###
 
 > Code in `hw1p1a.py` + `myutil.py`.
 
-### Part B ###
+### Problem 1, Part B ###
 
 In any given social group, your friends are on average more popular than you are, due to a sampling bias called [The Friendship Paradox](en.wikipedia.org/wiki/Friendship_paradox). This happens because "people with more friends are more likely to be your friend in the first place; that is, they have a higher propensity to make friends in the first place" (Wikipedia).
 
@@ -16,7 +16,7 @@ The same is true for this node network, where a direct neighbor of any given nod
 
 As a result, the degrees follow a power law distribution more closely for lower values of `prob` (which corresponds to higher probabilities that new nodes connect to a random existing node `n`'s neighbor rather than `n` itself).
 
-### Part C ###
+### Problem 1, Part C ###
 
 > Code in `hw1p1c.py` + `myutil.py`.
 
@@ -33,15 +33,16 @@ These values aren't super surprising. The slope at $10^{0} = 1$ of the log graph
 
 Our $\alpha = 2.0222...$ also makes sense, since the power law reading explained that any alpha whose value is `> 1` has "bins" of increasing size but decreasing number of nodes they contain.
 
-### Part D ###
+### Problem 1, Part D ###
 
 > Code in `hw1p1d.py` + `myutil.py`.
 
 In part a, earlier nodes tend to have a higher degree because they have more opportunities to connect to many nodes. Meanwhile, in this part we see that most nodes have approximately the same degree along a normal distribution. This is because each node is connected (on average) to 10% of the other nodes at any given time, rather than new nodes being randomly connected to any already-added nodes (which is what gave old nodes the advantage in part a).
 
+<!--BREAK-->
 ## Problem 2 :: Who is the most central actor? (30 points) ##
 
-### Part A ###
+### Problem 2, Part A ###
 
 **20 actors with the highest degree centrality:**
 ```md
@@ -71,7 +72,7 @@ RANK  NAME                   DEGREE             NUM FILMS   MAIN GENRE
 - Every actor on that list (except Tom Hanks) has been at well over 200 films. As such, they've simply worked with lots of people.
 - Every actor on that list (again except for Tom Hanks) mostly stars in adult films.
 
-### Part B ###
+### Problem 2, Part B ###
 
 **20 actors with the highest betweenness centrality:**
 ```md
@@ -103,7 +104,7 @@ RANK  NAME                    BETWEENNESS      NUM FILMS
 - The only actors found on both lists are "Jeremy, Ron" and "Hanks, Tom".
 - Betweenness centrality tends to follow a power law distribution, which is reflected even here, where we have only the top 20: the top ranked actor "Jeremy, Ron" has nearly twice the betweenness score as the #2 ranked actor "Chan, Jackie (I)". Meanwhile the #2-#6 ranked actors' scores are nearly twice that of #7-20 (and probably beyond).
 
-### Part C ###
+### Problem 2, Part C ###
 
 20 ACTORS WITH THE HIGHEST CLOSENESS CENTRALITY:
 
@@ -137,22 +138,23 @@ RANK  NAME                    BETWEENNESS      NUM FILMS
 
 
 
+<!--BREAK-->
 ## Problem 3 :: Foodie Madness (40 points) ##
 
 #### Notes on Matrix Multiplication & Dot Products ####
 ![](images/matrix_dot_product.png)
 ![](http://i.ytimg.com/vi/r-WlZLV0E0s/hqdefault.jpg)
 
-### Part A ###
+### Problem 3, Part A ###
 
 ![](images/3a.png)
 
-### Part B, C, & D ###
+### Problem 3, Part B, C, & D ###
 
 ![](images/3bc.png)
 ![](images/3d-2.png)
 
-### Part E ###
+### Problem 3, Part E ###
 
 ```py
 def rank(mylist):
@@ -190,7 +192,7 @@ rankings = [ 1, 4, 2, 5, 6, 7, 3, 8 ]
 
 ![](images/foodie.png)
 
-### Part F ###
+### Problem 3, Part F ###
 
 - Part c changes slightly in that what `v(k)` is now the value of what was previously `v(k + 1)`.
 - Part d does not change, because `∞ + x = ∞` for any finite `x`. The amount of food eaten at each consecutive round converges to `0` as `k → ∞`.
